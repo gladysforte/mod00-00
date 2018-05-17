@@ -21,7 +21,6 @@
 
 section {
 	min-height: 100vh;
-
 }
 /*
 *
@@ -32,16 +31,54 @@ section {
 section#bio{
 
 	background-color: #fde7fc;
+	background-image: url('../img/pattern.png');
+	/*background-size: cover;*/
 	position: relative;
-}
+} 	
 
+section#bio > div {
+	background-color: rgba(253,231,252,0.7); /*opacity will work in RGB*/
+	width: 100%;
+	height: 100vh;
+}
 
 section#bio,
 section#bio a {
 	color: #2b1703;
 }
 
-section#bio > div#details > img{
+
+section#bio > div > header > p {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+section#bio > div > header > p > a{
+	text-decoration: none;
+}
+
+section#bio > div > header > p > a:hover{
+	text-decoration: underline;
+	text-decoration-color: blue;
+}
+
+
+section#bio > div > header  {
+	position: relative;
+
+}
+
+
+section#bio > div > header > p:last-child {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+}
+
+section#bio > div > div#details > img{
 	border-radius: 50%;
 	width: 200px;
 	border: 5px solid white;
@@ -50,23 +87,33 @@ section#bio > div#details > img{
 }
 
 
-section#bio > div#details > h1,
-section#bio > div#details > ul {
-	font-family: 'Merriweather', serif;
+section#bio > div > div#details > h1,
+section#bio > div > div#details > ul {
+	font-family: 'Crimson Text', serif;
 	padding-top: : 15px;
 	padding-bottom: 15px;
 
 }
 
-section#bio > div#details > h1 {
-font-size: 35px
+section#bio > div > div#details > h1 {
+	font-size: 35px
+
+}
+
+section#bio > div > div#details > h1 > h1 {
+	font-size: 20px
 
 }
 
 
-section#bio > div#details > ul {
-list-style: none;
-font-size: 15px;
+section#bio > div > div#details > ul {
+	list-style: none;
+	font-size: 15px;
+}
+
+
+section#bio > div > div#details > p {
+	line-height: 1.5;
 }
 
 div#details{
@@ -107,8 +154,7 @@ section#contact > h2{
 
 body {
 	/*background-color: red;*/
-	font-family: 'Bree Serif', serif;
-
+	font-family: 'Questrial', sans-serif;
 }
 
 /*
